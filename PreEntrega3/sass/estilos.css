@@ -1,0 +1,163 @@
+* {
+  padding: 0;
+  margin: 0;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.logo1 {
+  position: relative;
+}
+
+.logo1 .logo2 {
+  position: absolute;
+  top: 0;
+  left: 0;
+  opacity: 0;
+  transition: 0.5s;
+}
+
+.logo1:hover .logo2 {
+  opacity: 1;
+}
+
+.nav-link {
+  color: #2596be;
+  align-items: flex-end;
+}
+
+#banner {
+  height: calc(100vh - 150px);
+}
+
+.slide {
+  margin-top: 10px;
+}
+.slide img {
+  display: flex;
+  height: calc(100vh - 150px);
+  align-items: center;
+}
+
+#acerca {
+  padding: 50px 50px;
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  height: calc(100vh - 150px);
+}
+#acerca img {
+  border-radius: 100%;
+}
+
+#acerca div {
+  padding: 30px 30px;
+}
+#acerca div p {
+  color: rgb(108, 108, 108);
+  font-size: 18px;
+}
+#acerca div h4 {
+  color: black;
+  font-size: 20px;
+  margin: 15px 0px;
+}
+
+.boton-saber-mas {
+  display: inline-block;
+  text-decoration: none;
+  color: black;
+  padding: 10px 30px;
+  border: 3px solid #2596be;
+  border-radius: 30px;
+  margin-top: 15px;
+  transition: all 0.4s;
+}
+
+.boton-saber-mas:hover {
+  background: #2596be;
+  color: white;
+}
+
+.social {
+  display: flex;
+  height: 70px;
+  align-items: center;
+  justify-content: space-around;
+}
+.social a {
+  text-decoration: none;
+  color: #2596be;
+  font-size: 30px;
+  transition: all 0.4s ease-in-out;
+}
+.social a:hover {
+  transform: scale(1.2);
+}
+
+.titulo {
+  color: #2596be;
+}
+
+#galeria .col-lg-4 {
+  padding: 20px;
+}
+#galeria .col-lg-4 img {
+  width: 100%;
+  height: 300px;
+}
+
+#galeria2 .col-lg-4 {
+  padding: 20px;
+}
+#galeria2 .col-lg-4 img {
+  width: 100%;
+  height: 300px;
+}
+
+#contacto {
+  margin: 65px;
+}
+
+/* adaptacion a mobil*/
+@media (max-width: 768px) {
+  .mostrar-menu,
+.esconder-menu {
+    display: block;
+  }
+  #contacto {
+    margin: 65px;
+  }
+  .menu {
+    position: fixed;
+    width: 100%;
+    height: 100vh;
+    background: white;
+    right: -100%;
+    top: 0;
+    text-align: center;
+    padding: 100px 0px;
+    z-index: 100;
+    transition: 0.8s;
+  }
+  .menu a {
+    display: block;
+    padding: 20px;
+  }
+  .esconder-menu {
+    position: absolute;
+    top: 40px;
+    right: 40px;
+  }
+  #check:checked ~ .menu {
+    right: 0;
+  }
+  #acerca {
+    margin-top: 200px;
+    margin-bottom: 200px;
+    flex-direction: column;
+    height: calc(100vh - 150px);
+  }
+  .galeria {
+    margin-top: 100px;
+  }
+}/*# sourceMappingURL=estilos.css.map */
